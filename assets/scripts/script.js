@@ -2,7 +2,6 @@
 
 const answerElement = document.getElementById("answer");
 const questionInputElement = document.getElementById("questionInput");
-const valueInput = questionInputElement.value;
 const answers = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -30,6 +29,9 @@ const answers = [
 function askQuestion() {
   if (questionInputElement.value == "") {
     alert("Espaço em branco, digite a sua pergunta");
+    return;
+  } else if (!questionInputElement.value.includes("?")) {
+    alert("Digite uma pergunta (?)");
     return;
   }
 
