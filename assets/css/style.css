@@ -1,0 +1,105 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 10vh 0 6vh 0;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    margin: 0 0 8px 0;
+    width: 400px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.text {
+    font-size: 13px;
+    width: 300px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+.input {
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid grey;
+    color: black;
+  
+
+    border-radius: 4px;
+}
+
+.input[type="text"]::placeholder {
+    font-size: 15px;
+}
+
+.input[type="text"]:focus {
+    outline: none;
+    border: 2px solid blueviolet;
+}
+
+.button {
+    background-color:blueviolet;
+    color: white;
+    font-size: 16px;
+    width: 300px;
+    height: 50px;
+
+    border-radius: 4px;
+
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(95, 55, 133);
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer {
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+#answer div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
